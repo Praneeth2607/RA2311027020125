@@ -27,7 +27,7 @@ const NotificationCard = ({ notification, isViewed, onClick }) => {
       }}
     >
       <CardContent>
-        <Box display="flex" justifyContent="space-between" alignItems="center" mb={1}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
           <Chip label={notification.Type} color={getChipColor(notification.Type)} size="small" />
           <Typography variant="caption" color="text.secondary">
             {new Date(notification.Timestamp).toLocaleString()}
